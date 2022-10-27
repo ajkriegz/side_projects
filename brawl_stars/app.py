@@ -5,6 +5,7 @@ import os
 path = os.path.join("resources", "maxed characters.png")
 os.startfile(path)
 print("Opening \"maxed characters.png\"")
+# For future, print list of map names
 while True:
     try: 
         map_name = input("Enter map name: ")
