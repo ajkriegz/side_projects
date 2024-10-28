@@ -7,7 +7,7 @@ pet_fee = 35.00
 rent = float(rent_input)
 duke = float(duke_input)
 # internet = float(internet_input)
-internet = 0
+internet = 71.40
 # rent += duke
 # rent += internet
 # print(f"Rent is {rent}")
@@ -39,7 +39,7 @@ print(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 Joel_rent -= (round((pet_fee/2),2))
 Ben_rent -= (round((pet_fee/2),2))
 AJ_rent += pet_fee
-print(f"Adding {pet_fee} to AJ's payment for monthly pet rent...")
+print(f"Adding {pet_fee} to AJ's payment for monthly pet rent... and subtracting half of that from Ben and Joel each.")
 
 # print(f"Subtracting {pet_fee} from Joel's and Ben's payments and adding {pet_fee} to AJ's payment for pet fees...")
 
@@ -47,7 +47,7 @@ Joel_rent += duke_split
 Ben_rent += duke_split
 AJ_rent -= (duke_split * 2) # AJ already paid Duke, so 2/3 of the payment is rebalanced to him.
 
-Joel_rent -= internet_split # Joel already paid the internet bill, so 2/3 of the payment is rebalanced to him.
+Joel_rent -= (internet_split * 2) # Joel already paid the internet bill, so 2/3 of the payment is rebalanced to him.
 Ben_rent += internet_split
 AJ_rent += internet_split
 
